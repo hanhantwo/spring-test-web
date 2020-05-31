@@ -11,7 +11,8 @@ import java.awt.event.WindowEvent;
  */
 public class FrameStart extends Frame {
 
-    int x = 200, y = 200;
+    Tank myTank = new Tank(100,100,Dir.DOWN);
+    Bullet bullet =new Bullet(300,300,Dir.DOWN);
 
     public FrameStart() {
         //设置窗口大小
@@ -35,9 +36,9 @@ public class FrameStart extends Frame {
 
     @Override
     public void paint(Graphics graphics) {
-        graphics.fillRect(x, y, 50, 50);
-//        x += 10;
-//        y += 10;
+
+        myTank.paint(graphics);
+        bullet.paint(graphics);
     }
 
     /**
@@ -71,6 +72,7 @@ public class FrameStart extends Frame {
                 default:
                     break;
             }
+            setMainTankDir();
         }
 
         /**
@@ -95,7 +97,23 @@ public class FrameStart extends Frame {
                 default:
                     break;
             }
+            setMainTankDir();
         }
+        private void setMainTankDir(){
+            if(!bL&&!bU&&!bR&&!bD){
+                myTank.setMoveing(false);
+            }
+            else {
+                myTank.setMoveing(true);
+                if (bL) myTank.setDir(Dir.LEFT);
+                if (bU) myTank.setDir(Dir.UP);
+                if (bR) myTank.setDir(Dir.RIGHT);
+                if (bD) myTank.setDir(Dir.DOWN);
+            }
+        }
+
     }
+
+
 
 }
