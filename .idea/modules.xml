@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/msb-tanks/msb-tanks.iml" filepath="$PROJECT_DIR$/msb-tanks/msb-tanks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-test/msb-test.iml" filepath="$PROJECT_DIR$/msb-test/msb-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test-web.iml" filepath="$PROJECT_DIR$/spring-test-web.iml" />
+    </modules>
+  </component>
+</project>
