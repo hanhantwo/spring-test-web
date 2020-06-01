@@ -17,4 +17,10 @@
       <module name="spring-test-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="msb-tanks" options="-parameters -Xlint:unchecked" />
+      <module name="msb-test" options="-parameters -Xlint:unchecked" />
+    </option>
+  </component>
 </project>

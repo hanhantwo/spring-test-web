@@ -17,23 +17,6 @@ public class Tank {
     private Dir dir = Dir.DOWN;
     private static final int SPEED = 10;
     private boolean moveing = false;
-
-    public void setMoveing(boolean moveing) {
-        this.moveing = moveing;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public void setDir(Dir dir) {
-        this.dir = dir;
-    }
-
     public Tank(int x, int y, Dir dir) {
         super();
         this.dir = dir;
@@ -64,8 +47,5 @@ public class Tank {
                 y += SPEED;
                 break;
         }
-
-
     }
-
 }

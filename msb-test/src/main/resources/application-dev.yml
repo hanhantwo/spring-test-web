@@ -1,0 +1,17 @@
+#设置端口号
+server:
+  port: 8001
+spring:
+  datasource:
+    name: db
+    url: jdbc:mysql://localhost:3306/spring-test-web?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    initialSize: 10
+    minidle: 5
+    maxActive: 50
+    #配置间隔多久进行一次检测，检测需要关闭空闲连接，单位是毫秒
+    time-between-eviction-runs-millis: 6000
+
+    min-evictable-idle-time-millis: 30000
