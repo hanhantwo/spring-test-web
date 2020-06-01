@@ -1,8 +1,6 @@
 package com.cn.tank;
 
 import lombok.Data;
-import lombok.Setter;
-
 import java.awt.*;
 
 /**
@@ -17,15 +15,22 @@ public class Tank {
     private Dir dir = Dir.DOWN;
     private static final int SPEED = 10;
     private boolean moveing = false;
-    public Tank(int x, int y, Dir dir) {
+
+    private FrameStart fs=null;
+
+    public Tank(int x, int y, Dir dir,FrameStart fs) {
         super();
         this.dir = dir;
         this.x = x;
         this.y = y;
+        this.fs=fs;
     }
 
     public void paint(Graphics graphics) {
+        Color c = graphics.getColor();
+        graphics.setColor(Color.YELLOW);
         graphics.fillRect(x, y, 50, 50);
+        graphics.setColor(c);
         move();
     }
 
@@ -47,5 +52,9 @@ public class Tank {
                 y += SPEED;
                 break;
         }
+    }
+
+    public void fire(){
+     fs.bullets.add(new Bullet(this.x, this.y, this.dir,fs));
     }
 }

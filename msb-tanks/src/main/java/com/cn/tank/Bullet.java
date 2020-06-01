@@ -13,16 +13,21 @@ public class Bullet {
     private int x,y;
     private Dir dir;
     private static int WIDTH=10,HEIGTH=10;
+    private FrameStart fs=null;
+    private boolean five=true;
 
-
-    public Bullet(int x,int y,Dir dir){
+    public Bullet(int x,int y,Dir dir,FrameStart fs){
 
         this.x=x;
         this.y=y;
         this.dir=dir;
+        this.fs=fs;
     }
 
     public  void paint(Graphics g){
+        if(!five){
+       fs.bullets.remove(this);
+        }
         Color c =g.getColor();
         g.setColor(Color.RED);
         g.fillOval(x,y,WIDTH,HEIGTH);
@@ -44,6 +49,9 @@ public class Bullet {
             case DOWN:
                 y += SPEED;
                 break;
+        }
+        if(x<0 ||y<0||x>FrameStart.GAME_WIDTH||y>FrameStart.GAME_HEIGTH){
+            five=false;
         }
     }
 
