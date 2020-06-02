@@ -20,7 +20,7 @@ class ImageIoTest {
 
         try {
             //读取图片的io,
-            BufferedImage image = ImageIO.read(new File("绝对路径写死了不好"));
+            BufferedImage image = ImageIO.read(new File("C:/Users/dxq/Desktop/yunwei/logo.jpg"));
             assertNotNull(image);
             /**
              * 将所有图片放到classpath路径下面，通过类加载方式查找，
@@ -28,7 +28,7 @@ class ImageIoTest {
              * ClassLoader类将所有class文件加载到内存，
              * ImageIoTest.class.getClassLoader() 可以理解为classpath路径
              */
-            BufferedImage image2 = ImageIO.read(ImageIoTest.class.getClassLoader().getResourceAsStream("相对路径"));
+            BufferedImage image2 = ImageIO.read(ImageIoTest.class.getClassLoader().getResourceAsStream("images/0.gif"));
             assertNotNull(image);
         } catch (IOException e) {
             e.printStackTrace();
