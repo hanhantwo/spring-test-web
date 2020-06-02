@@ -11,15 +11,15 @@ import java.util.List;
 /**
  * 创建窗口类,继承Frame类，重写paint方法
  */
-public class FrameStart extends Frame {
+public class TankFrame extends Frame {
 
-    Tank myTank = new Tank(100, 100, Dir.DOWN,this);
+    Tank myTank = new Tank(200, 400, Dir.DOWN,this,Group.GOOD);
+    List<Tank> tanks = new ArrayList<>();
     List<Bullet> bullets = new ArrayList<>();
-//    Bullet bullet = new Bullet(300, 300, Dir.DOWN);
-
+    Explode explode = new Explode(100,100,this);
     static final int GAME_WIDTH = 800, GAME_HEIGTH = 600;
 
-    public FrameStart() {
+    public TankFrame() {
         //设置窗口大小
         setSize(GAME_WIDTH, GAME_HEIGTH);
         //是否运行改动大小
@@ -63,12 +63,24 @@ public class FrameStart extends Frame {
         Color c =graphics.getColor();
         graphics.setColor(Color.WHITE);
         graphics.drawString("子弹数量为："+bullets.size(),10,60);
+        graphics.drawString("敌军坦克数量为："+tanks.size(),10,80);
         graphics.setColor(c);
+
         myTank.paint(graphics);
-//        bullet.paint(graphics);
         for (int i = 0; i < bullets.size(); i++) {
             bullets.get(i).paint(graphics);
         }
+
+        for (int i = 0; i < tanks.size(); i++) {
+            tanks.get(i).paint(graphics);
+        }
+
+        for (int i = 0; i <bullets.size() ; i++) {
+            for (int j = 0; j < tanks.size(); j++) {
+                bullets.get(i).collideWith(tanks.get(j));
+            }
+        }
+        explode.paint(graphics);
     }
 
     /**
