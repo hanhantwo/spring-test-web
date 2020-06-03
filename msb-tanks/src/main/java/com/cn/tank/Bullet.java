@@ -84,8 +84,11 @@ public class Bullet {
          * 判断两个方块是否相交
          */
         if (rectangle1.intersects(rectangle2)) {
+            Explode ex =  new Explode(tank.getX(),tank.getY(),tank.getFs());
+            fs.explodes.add(ex);
             tank.die();
             this.die();
+            ex.die();
         }
     }
 

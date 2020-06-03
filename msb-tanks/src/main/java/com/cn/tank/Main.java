@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //new一个窗口类
         TankFrame frame = new TankFrame();
-
         /**
          * 初始化敌方坦克
          */

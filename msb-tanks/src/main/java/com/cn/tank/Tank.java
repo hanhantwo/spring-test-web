@@ -15,7 +15,7 @@ import java.util.Random;
 public class Tank {
     private int x, y;
     private Dir dir = Dir.DOWN;
-    private static final int SPEED = 1;
+    private static final int SPEED = 3;
     private boolean moveing = true;
     private boolean live = true;
     public static int WIDTH = ResourcesMgr.tankD.getWidth(), HEIGTH = ResourcesMgr.tankD.getHeight();
@@ -43,6 +43,10 @@ public class Tank {
 
     public int getY() {
         return y;
+    }
+
+    public TankFrame getFs() {
+        return fs;
     }
 
     public Dir getDir() {
@@ -125,6 +129,7 @@ public class Tank {
     }
     public void die() {
         this.live=false;
+
     }
 
 }
