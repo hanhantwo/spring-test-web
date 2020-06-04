@@ -18,7 +18,7 @@ public class Bullet {
 
     private Group group = Group.BAD;
 
-
+    Rectangle rect = new Rectangle();
     public Bullet(int x, int y, Dir dir, TankFrame fs, Group group) {
 
         this.x = x;
@@ -26,6 +26,10 @@ public class Bullet {
         this.dir = dir;
         this.fs = fs;
         this.group = group;
+        rect.x = x;
+        rect.y= y;
+        rect.width=WIDTH;
+        rect.height=HEIGTH;
     }
 
     public void paint(Graphics g) {
@@ -68,6 +72,12 @@ public class Bullet {
                 y += SPEED;
                 break;
         }
+
+        rect.x = this.x;
+        rect.y= this.y;
+        rect.width=this.WIDTH;
+        rect.height=this.HEIGTH;
+
         if (x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGTH) {
             live = false;
         }
@@ -77,18 +87,16 @@ public class Bullet {
         if (this.group == tank.getGroup()) {
             return;
         }
-        //用一个Rectangle类记录子弹数量
+        //用一个Rectangle类记录子弹数量,new太多对象不好
         Rectangle rectangle1 = new Rectangle(this.x, this.y, WIDTH, HEIGTH);
         Rectangle rectangle2 = new Rectangle(tank.getX(), tank.getY(), tank.WIDTH, tank.HEIGTH);
         /**
          * 判断两个方块是否相交
          */
-        if (rectangle1.intersects(rectangle2)) {
-            Explode ex =  new Explode(tank.getX(),tank.getY(),tank.getFs());
-            fs.explodes.add(ex);
+        if (rect.intersects(tank.rect)) {
+            fs.explodes.add(new Explode(tank.getX(),tank.getY(),tank.getFs()));
             tank.die();
             this.die();
-            ex.die();
         }
     }
 

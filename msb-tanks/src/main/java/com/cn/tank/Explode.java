@@ -18,7 +18,6 @@ public class Explode {
     public static int HEIGTH = ResourcesMgr.explodes[0].getHeight();
     private TankFrame fs = null;
     private int step = 0;
-    private boolean live = true;
     public Explode(int x, int y, TankFrame fs) {
         this.x = x;
         this.y = y;
@@ -38,14 +37,8 @@ public class Explode {
 
         g.drawImage(ResourcesMgr.explodes[step++], x, y, null);
         if (step >= ResourcesMgr.explodes.length) {
-            step = 0;
+            fs.explodes.remove(this);
         }
-//        if(!live){
-//            fs.explodes.remove(this);
-//        }
-    }
-    public void die() {
-        this.live = false;
     }
 
 }

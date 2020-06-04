@@ -19,8 +19,8 @@ public class TankFrame extends Frame {
     List<Explode> explodes = new ArrayList<>();
 
 
-//    Explode explode = new Explode(100,100,this);
-    static final int GAME_WIDTH = 800, GAME_HEIGTH = 600;
+    //    Explode explode = new Explode(100,100,this);1080
+    static final int GAME_WIDTH = 960, GAME_HEIGTH = 700;
 
     public TankFrame() {
         //设置窗口大小
@@ -67,6 +67,7 @@ public class TankFrame extends Frame {
         graphics.setColor(Color.WHITE);
         graphics.drawString("子弹数量为："+bullets.size(),10,60);
         graphics.drawString("敌军坦克数量为："+tanks.size(),10,80);
+        graphics.drawString("爆炸数量为："+explodes.size(),10,100);
         graphics.setColor(c);
 
         myTank.paint(graphics);
@@ -80,7 +81,7 @@ public class TankFrame extends Frame {
         for (int i = 0; i < explodes.size(); i++) {
             explodes.get(i).paint(graphics);
         }
-
+        //碰撞检测
         for (int i = 0; i <bullets.size() ; i++) {
             for (int j = 0; j < tanks.size(); j++) {
                 bullets.get(i).collideWith(tanks.get(j));
