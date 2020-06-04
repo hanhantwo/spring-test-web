@@ -4,3 +4,5 @@ spring:
     active: dev
   application:
     name: msb-test
+#配置坦克数量
+tanksCount: 8
