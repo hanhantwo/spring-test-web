@@ -2,22 +2,22 @@ package com.cn.singleton;
 
 /**
  * @ClassName Mag02
- * 懒汉式，什么时候用的时候才初始化
+ * synchronized 上锁
  * @Author zhanghongjun
  * @Date 2020-06-04 22:58
  * @Version 1.0
  */
-public class Mag03 {
-    private static Mag03 INSTANCE;
+public class Mag04 {
+    private static Mag04 INSTANCE;
 
 
     /**
      * 私有从构造方法，别人没法new对象
      */
-    private Mag03() {
+    private Mag04() {
     }
-
-    public static Mag03 getInstance() {
+    //synchronized 上锁，因为锁在方法上加上用static修饰的，给类对象上锁，效率很低
+    public static synchronized Mag04 getInstance() {
 
         if (INSTANCE == null) {
             try {
@@ -25,7 +25,7 @@ public class Mag03 {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            INSTANCE = new Mag03();
+            INSTANCE = new Mag04();
         }
         return INSTANCE;
     }
@@ -38,7 +38,7 @@ public class Mag03 {
         for (int i = 0; i < 100; i++) {
             //启动多个线程取到每次获取到对象的哈希值
             new Thread(() -> {
-                System.out.println(Mag03.getInstance().hashCode());
+                System.out.println(Mag04.getInstance().hashCode());
             } ).start();
 
         }
