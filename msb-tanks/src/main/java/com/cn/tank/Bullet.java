@@ -1,6 +1,7 @@
 package com.cn.tank;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 /**
  * @ClassName Bullet
@@ -8,7 +9,7 @@ import java.awt.*;
  * @Author luo15251835249
  * @Date 2020/5/31 23:53
  */
-public class Bullet {
+public class Bullet implements Comparable<Integer>{
     private static final int SPEED = 5;
     private int x, y;
     private Dir dir;
@@ -30,6 +31,7 @@ public class Bullet {
         rect.y= y;
         rect.width=WIDTH;
         rect.height=HEIGTH;
+        fs.bullets.add(this);
     }
 
     public void paint(Graphics g) {
@@ -102,5 +104,16 @@ public class Bullet {
 
     public void die() {
         this.live = false;
+    }
+
+    @Override
+    public int compareTo(Integer i) {
+        if(i== KeyEvent.VK_ALT){
+            return 1;
+        }else if(i== KeyEvent.VK_SPACE){
+            return 2;
+        }else{
+            return 0;
+        }
     }
 }

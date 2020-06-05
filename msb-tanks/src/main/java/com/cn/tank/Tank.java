@@ -13,17 +13,20 @@ import java.util.Random;
  */
 @Data
 public class Tank {
-    private int x, y;
-    private Dir dir = Dir.DOWN;
+    public int x, y;
+    public Dir dir = Dir.DOWN;
     private static final int SPEED = 3;
     private boolean moveing = true;
     private boolean live = true;
     public static int WIDTH = ResourcesMgr.goodTankD.getWidth(), HEIGTH = ResourcesMgr.goodTankD.getHeight();
 
-    private TankFrame fs = null;
-    private Group group = Group.BAD;
+    public TankFrame fs = null;
+    public Group group = Group.BAD;
     Rectangle rect = new Rectangle();
     private Random random = new Random();
+    FireStrategy fireStrategy =new DefaltFireStrategy();
+//    FireStrategy fireStrategy = DefaltFireStrategy.getInstance();
+//    FireStrategy fireStrategy = new FourFireStrategy();
 
     public void setX(int x) {
         this.x = x;
@@ -73,6 +76,21 @@ public class Tank {
         rect.y= y;
         rect.width=WIDTH;
         rect.height=HEIGTH;
+        if(group==Group.GOOD){
+            String goodFSName = PropertyMgr.get("goodsFS").toString();
+            try {
+            /**
+             * 通过类加载方式，从获取到类名，然后通过java反射new出来类对象；
+             * fireStrategy =   Class.forName(goodFSName).newInstance();
+             * 方法保留在此
+             */
+                fireStrategy =   (FireStrategy)Class.forName(goodFSName).newInstance();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+//            fireStrategy=  new FourFireStrategy();
+        }
     }
 
     public void paint(Graphics graphics) {
@@ -136,10 +154,9 @@ public class Tank {
     }
 
     public void fire() {
-        int bx = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
-        int by = this.y + Tank.HEIGTH / 2 - Bullet.HEIGTH / 2;
+
         //开火的时候添加子弹
-        fs.bullets.add(new Bullet(bx, by, this.dir, fs, this.group));
+        fireStrategy.fire(this);
     }
 
     public void die() {

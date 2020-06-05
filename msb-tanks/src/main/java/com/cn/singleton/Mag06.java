@@ -8,7 +8,7 @@ package com.cn.singleton;
  * @Version 1.0
  */
 public class Mag06 {
-    private static Mag06 INSTANCE;
+    private static volatile  Mag06 INSTANCE; //jit
 
 
     /**
