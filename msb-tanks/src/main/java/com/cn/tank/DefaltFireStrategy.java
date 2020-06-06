@@ -25,7 +25,7 @@ public class DefaltFireStrategy implements FireStrategy {
         new Bullet(bx, by, tank.dir, tank.fs, tank.group);
         if(tank.group==Group.GOOD){
             new Thread(()->{
-                new Audio("audio/tank_fire.wav");
+                new Audio("tank_fire.wav");
             }).start();
         }
     }

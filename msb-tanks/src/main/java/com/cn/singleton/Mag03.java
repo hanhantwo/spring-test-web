@@ -30,9 +30,6 @@ public class Mag03 {
         return INSTANCE;
     }
 
-    public void m() {
-        System.out.println("m");
-    }
 
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
