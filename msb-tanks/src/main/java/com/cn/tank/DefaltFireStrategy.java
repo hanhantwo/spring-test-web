@@ -8,15 +8,15 @@ package com.cn.tank;
  * @Version 1.0
  */
 public class DefaltFireStrategy implements FireStrategy {
-//    static final DefaltFireStrategy INSTANCE = new DefaltFireStrategy();
-//
-//    private DefaltFireStrategy(){
-//
-//    }
-//
-//    public static DefaltFireStrategy getInstance(){
-//        return INSTANCE;
-//    }
+    static final DefaltFireStrategy INSTANCE = new DefaltFireStrategy();
+
+    private DefaltFireStrategy(){
+
+    }
+
+    public static DefaltFireStrategy getInstance(){
+        return INSTANCE;
+    }
 
     @Override
     public void fire(Tank tank) {

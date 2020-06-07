@@ -1,5 +1,7 @@
 package com.cn.tank;
 
+import com.cn.tankFactory.BaseTank;
+
 /**
  * 定义开火策略
  */

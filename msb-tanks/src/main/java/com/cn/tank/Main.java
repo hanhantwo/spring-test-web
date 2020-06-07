@@ -10,7 +10,7 @@ public class Main {
          */
          Object o =   PropertyMgr.get("tanksCount");
         for (int i = 0; i < Integer.parseInt(o.toString()); i++) {
-            frame.tanks.add(new Tank(50+i*100,200,Dir.DOWN, frame,Group.BAD));
+            frame.tanks.add(frame.gf.createTank(50+i*100,200,Dir.DOWN, frame,Group.BAD));
         }
         while (true) {
             Thread.sleep(50);

@@ -1,19 +1,17 @@
-package com.cn.tank;
+package com.cn.tankFactory;
 
-import com.cn.tankFactory.BaseBullet;
-import com.cn.tankFactory.BaseTank;
-import com.cn.tankFactory.DefaultFactory;
+import com.cn.tank.*;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 
 /**
- * @ClassName Bullet
- * @Description 子弹类
- * @Author luo15251835249
- * @Date 2020/5/31 23:53
+ * @ClassName RectBullet
+ * @Description TODO
+ * @Author zhanghongjun
+ * @Date 2020-06-07 14:14
+ * @Version 1.0
  */
-public class Bullet extends BaseBullet implements Comparable<Integer>{
+public class RectBullet extends BaseBullet {
     private static final int SPEED = 5;
     private int x, y;
     private Dir dir;
@@ -24,7 +22,8 @@ public class Bullet extends BaseBullet implements Comparable<Integer>{
     private Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
-    public Bullet(int x, int y, Dir dir, TankFrame fs, Group group) {
+
+    public RectBullet(int x, int y, Dir dir, TankFrame fs, Group group) {
 
         this.x = x;
         this.y = y;
@@ -32,33 +31,21 @@ public class Bullet extends BaseBullet implements Comparable<Integer>{
         this.fs = fs;
         this.group = group;
         rect.x = x;
-        rect.y= y;
-        rect.width=WIDTH;
-        rect.height=HEIGTH;
+        rect.y = y;
+        rect.width = WIDTH;
+        rect.height = HEIGTH;
         fs.bullets.add(this);
     }
+
     @Override
     public void paint(Graphics g) {
         if (!live) {
             fs.bullets.remove(this);
         }
-        /**
-         * 根据方向赋值对应的图片
-         */
-        switch (dir) {
-            case LEFT:
-                g.drawImage(ResourcesMgr.bulletL, x, y, null);
-                break;
-            case UP:
-                g.drawImage(ResourcesMgr.bulletU, x, y, null);
-                break;
-            case RIGHT:
-                g.drawImage(ResourcesMgr.bulletR, x, y, null);
-                break;
-            case DOWN:
-                g.drawImage(ResourcesMgr.bulletD, x, y, null);
-                break;
-        }
+       Color c = g.getColor();
+        g.setColor(Color.YELLOW);
+        g.fillRect(x,y,20,20);
+        g.setColor(c);
         move();
 
     }
@@ -80,14 +67,15 @@ public class Bullet extends BaseBullet implements Comparable<Integer>{
         }
 
         rect.x = this.x;
-        rect.y= this.y;
-        rect.width=this.WIDTH;
-        rect.height=this.HEIGTH;
+        rect.y = this.y;
+        rect.width = this.WIDTH;
+        rect.height = this.HEIGTH;
 
         if (x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGTH) {
             live = false;
         }
     }
+
     @Override
     public void collideWith(BaseTank tank) {
         if (this.group == tank.getGroup()) {
@@ -100,7 +88,7 @@ public class Bullet extends BaseBullet implements Comparable<Integer>{
          * 判断两个方块是否相交
          */
         if (rect.intersects(tank.rect)) {
-            fs.explodes.add(fs.gf.createExplode(tank.getX(),tank.getY(),tank.getFs()));
+            fs.explodes.add(fs.gf.createExplode(tank.getX(), tank.getY(), tank.getFs()));
             tank.die();
             this.die();
         }
@@ -110,14 +98,5 @@ public class Bullet extends BaseBullet implements Comparable<Integer>{
         this.live = false;
     }
 
-    @Override
-    public int compareTo(Integer i) {
-        if(i== KeyEvent.VK_ALT){
-            return 1;
-        }else if(i== KeyEvent.VK_SPACE){
-            return 2;
-        }else{
-            return 0;
-        }
-    }
 }
+
