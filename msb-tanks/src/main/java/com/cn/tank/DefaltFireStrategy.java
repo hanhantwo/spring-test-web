@@ -22,7 +22,7 @@ public class DefaltFireStrategy implements FireStrategy {
     public void fire(Tank tank) {
         int bx = tank.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
         int by = tank.y + Tank.HEIGTH / 2 - Bullet.HEIGTH / 2;
-        new Bullet(bx, by, tank.dir, tank.fs, tank.group);
+        new Bullet(bx, by, tank.dir, tank.gm, tank.group);
         if(tank.group==Group.GOOD){
             new Thread(()->{
                 new Audio("tank_fire.wav");

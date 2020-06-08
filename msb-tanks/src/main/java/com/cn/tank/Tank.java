@@ -12,7 +12,7 @@ import java.util.Random;
  * @Date 2020/5/31 23:04
  */
 @Data
-public class Tank {
+public class Tank extends GameObject {
     public int x, y;
     public Dir dir = Dir.DOWN;
     private static final int SPEED = 3;
@@ -20,21 +20,13 @@ public class Tank {
     private boolean live = true;
     public static int WIDTH = ResourcesMgr.goodTankD.getWidth(), HEIGTH = ResourcesMgr.goodTankD.getHeight();
 
-    public TankFrame fs = null;
+    public GameModel gm = null;
     public Group group = Group.BAD;
     Rectangle rect = new Rectangle();
     private Random random = new Random();
     FireStrategy fireStrategy =new DefaltFireStrategy();
 //    FireStrategy fireStrategy = DefaltFireStrategy.getInstance();
 //    FireStrategy fireStrategy = new FourFireStrategy();
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
 
     public void setDir(Dir dir) {
         this.dir = dir;
@@ -48,28 +40,20 @@ public class Tank {
         return y;
     }
 
-    public TankFrame getFs() {
-        return fs;
-    }
-
-    public Dir getDir() {
-        return dir;
-    }
-
-    public static int getSPEED() {
-        return SPEED;
-    }
-
     public Group getGroup() {
         return group;
     }
 
-    public Tank(int x, int y, Dir dir, TankFrame fs, Group group) {
+    public Rectangle getRect() {
+        return rect;
+    }
+
+    public Tank(int x, int y, Dir dir, GameModel gm , Group group) {
         super();
         this.dir = dir;
         this.x = x;
         this.y = y;
-        this.fs = fs;
+        this.gm = gm;
         this.group = group;
 
         rect.x = x;
@@ -95,7 +79,7 @@ public class Tank {
 
     public void paint(Graphics graphics) {
         if (!live) {
-            fs.tanks.remove(this);
+            gm.remove(this);
         }
         /**
          * 根据方向赋值对应的图片
@@ -176,6 +160,17 @@ public class Tank {
             x=TankFrame.GAME_WIDTH-Tank.WIDTH-2;
         }else if(this.y>=TankFrame.GAME_HEIGTH-Tank.HEIGTH-2){
             y=TankFrame.GAME_HEIGTH-Tank.HEIGTH-2;
+        }
+    }
+    public void stop(){
+        if(this.dir==Dir.UP){
+            this.dir=Dir.DOWN;
+        }else if(this.dir==Dir.DOWN){
+            this.dir=Dir.UP;
+        }else if(this.dir==Dir.LEFT){
+            this.dir=Dir.RIGHT;
+        }else if(this.dir==Dir.RIGHT){
+            this.dir=Dir.LEFT;
         }
     }
 }

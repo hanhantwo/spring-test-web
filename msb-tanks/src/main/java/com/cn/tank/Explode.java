@@ -12,16 +12,16 @@ import java.awt.*;
  * @Version 1.0
  */
 @Data
-public class Explode {
+public class Explode extends GameObject{
     private int x, y;
     public static int WIDTH = ResourcesMgr.explodes[0].getWidth();
     public static int HEIGTH = ResourcesMgr.explodes[0].getHeight();
-    private TankFrame fs = null;
+    private GameModel gm = null;
     private int step = 0;
-    public Explode(int x, int y, TankFrame fs) {
+    public Explode(int x, int y, GameModel gm) {
         this.x = x;
         this.y = y;
-        this.fs = fs;
+        this.gm = gm;
 //        new Audio("").run();
     }
 
@@ -37,7 +37,7 @@ public class Explode {
 
         g.drawImage(ResourcesMgr.explodes[step++], x, y, null);
         if (step >= ResourcesMgr.explodes.length) {
-            fs.explodes.remove(this);
+            gm.remove(this);
         }
     }
 

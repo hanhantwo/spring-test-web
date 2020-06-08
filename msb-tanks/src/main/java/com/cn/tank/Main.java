@@ -5,13 +5,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //new一个窗口类
         TankFrame frame = new TankFrame();
-        /**
-         * 初始化敌方坦克
-         */
-         Object o =   PropertyMgr.get("tanksCount");
-        for (int i = 0; i < Integer.parseInt(o.toString()); i++) {
-            frame.tanks.add(new Tank(50+i*100,200,Dir.DOWN, frame,Group.BAD));
-        }
+        frame.gm.getTank();
         while (true) {
             Thread.sleep(50);
          frame.repaint();

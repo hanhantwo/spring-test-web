@@ -9,34 +9,34 @@ import java.awt.event.KeyEvent;
  * @Author luo15251835249
  * @Date 2020/5/31 23:53
  */
-public class Bullet implements Comparable<Integer>{
+public class Bullet extends GameObject implements Comparable<Integer>{
     private static final int SPEED = 5;
     private int x, y;
     private Dir dir;
     public static int WIDTH = ResourcesMgr.bulletD.getWidth(), HEIGTH = ResourcesMgr.bulletD.getHeight();
-    private TankFrame fs = null;
+    private GameModel gm = null;
     private boolean live = true;
 
     private Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
-    public Bullet(int x, int y, Dir dir, TankFrame fs, Group group) {
+    public Bullet(int x, int y, Dir dir, GameModel gm, Group group) {
 
         this.x = x;
         this.y = y;
         this.dir = dir;
-        this.fs = fs;
+        this.gm = gm;
         this.group = group;
         rect.x = x;
         rect.y= y;
         rect.width=WIDTH;
         rect.height=HEIGTH;
-        fs.bullets.add(this);
+        gm.add(this);
     }
 
     public void paint(Graphics g) {
         if (!live) {
-            fs.bullets.remove(this);
+            gm.remove(this);
         }
         /**
          * 根据方向赋值对应的图片
@@ -96,7 +96,7 @@ public class Bullet implements Comparable<Integer>{
          * 判断两个方块是否相交
          */
         if (rect.intersects(tank.rect)) {
-            fs.explodes.add(new Explode(tank.getX(),tank.getY(),tank.getFs()));
+            gm.add(new Explode(tank.getX(),tank.getY(),tank.gm));
             tank.die();
             this.die();
         }
