@@ -76,7 +76,7 @@ public class Tank extends GameObject {
 //            fireStrategy=  new FourFireStrategy();
         }
     }
-
+   @Override
     public void paint(Graphics graphics) {
         if (!live) {
             gm.remove(this);

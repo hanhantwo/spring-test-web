@@ -21,6 +21,7 @@ public class GameModel {
 //    List<Tank> tanks = new ArrayList<>();
 //    List<Bullet> bullets = new ArrayList<>();
 //    List<Explode> explodes = new ArrayList<>();
+    //运用策略模式和责任链模式，筛选条件是责任链模式，不同的类型的碰撞就是实现接口就是策略模式
     Collider collider = new BulletTankCollider();
     Collider collider2 = new TankTankCollider();
 

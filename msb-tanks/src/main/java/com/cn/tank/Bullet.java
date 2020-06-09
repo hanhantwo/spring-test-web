@@ -33,7 +33,7 @@ public class Bullet extends GameObject implements Comparable<Integer>{
         rect.height=HEIGTH;
         gm.add(this);
     }
-
+    @Override
     public void paint(Graphics g) {
         if (!live) {
             gm.remove(this);
