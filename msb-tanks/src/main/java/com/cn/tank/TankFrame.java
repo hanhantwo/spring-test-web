@@ -12,7 +12,7 @@ import java.util.List;
  * 创建窗口类,继承Frame类，重写paint方法
  */
 public class TankFrame extends Frame {
-    GameModel gm = new GameModel();
+    GameModel gm =GameModel.getInstance();
     static final int GAME_WIDTH = 960, GAME_HEIGTH = 700;
 
     public TankFrame() {

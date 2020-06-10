@@ -14,19 +14,16 @@ import java.util.Random;
 @Data
 public class Tank extends GameObject {
     public int x, y;
+    public int oldx, oldy;
     public Dir dir = Dir.DOWN;
     private static final int SPEED = 3;
     private boolean moveing = true;
     private boolean live = true;
     public static int WIDTH = ResourcesMgr.goodTankD.getWidth(), HEIGTH = ResourcesMgr.goodTankD.getHeight();
-
-    public GameModel gm = null;
     public Group group = Group.BAD;
-    Rectangle rect = new Rectangle();
+    public Rectangle rect = new Rectangle();
     private Random random = new Random();
-    FireStrategy fireStrategy =new DefaltFireStrategy();
-//    FireStrategy fireStrategy = DefaltFireStrategy.getInstance();
-//    FireStrategy fireStrategy = new FourFireStrategy();
+    FireStrategy fireStrategy = new DefaltFireStrategy();
 
     public void setDir(Dir dir) {
         this.dir = dir;
@@ -48,54 +45,56 @@ public class Tank extends GameObject {
         return rect;
     }
 
-    public Tank(int x, int y, Dir dir, GameModel gm , Group group) {
+    public Tank(int x, int y, Dir dir, Group group) {
         super();
         this.dir = dir;
         this.x = x;
         this.y = y;
-        this.gm = gm;
         this.group = group;
 
         rect.x = x;
-        rect.y= y;
-        rect.width=WIDTH;
-        rect.height=HEIGTH;
-        if(group==Group.GOOD){
+        rect.y = y;
+        rect.width = WIDTH;
+        rect.height = HEIGTH;
+        if (group == Group.GOOD) {
             String goodFSName = PropertyMgr.get("goodsFS").toString();
             try {
-            /**
-             * 通过类加载方式，从获取到类名，然后通过java反射new出来类对象；
-             * fireStrategy =   Class.forName(goodFSName).newInstance();
-             * 方法保留在此
-             */
-                fireStrategy =   (FireStrategy)Class.forName(goodFSName).newInstance();
+                /**
+                 * 通过类加载方式，从获取到类名，然后通过java反射new出来类对象；
+                 * fireStrategy =   Class.forName(goodFSName).newInstance();
+                 * 方法保留在此
+                 */
+                fireStrategy = (FireStrategy) Class.forName(goodFSName).newInstance();
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-//            fireStrategy=  new FourFireStrategy();
+        } else {
+            fireStrategy = new DefaltFireStrategy();
         }
+        GameModel.getInstance().add(this);
     }
-   @Override
+
+    @Override
     public void paint(Graphics graphics) {
         if (!live) {
-            gm.remove(this);
+            GameModel.getInstance().remove(this);
         }
         /**
          * 根据方向赋值对应的图片
          */
         switch (dir) {
             case LEFT:
-                graphics.drawImage(this.group==Group.GOOD?ResourcesMgr.goodTankL:ResourcesMgr.badTankL, x, y, null);
+                graphics.drawImage(this.group == Group.GOOD ? ResourcesMgr.goodTankL : ResourcesMgr.badTankL, x, y, null);
                 break;
             case UP:
-                graphics.drawImage(this.group==Group.GOOD?ResourcesMgr.goodTankU:ResourcesMgr.badTankU, x, y, null);
+                graphics.drawImage(this.group == Group.GOOD ? ResourcesMgr.goodTankU : ResourcesMgr.badTankU, x, y, null);
                 break;
             case RIGHT:
-                graphics.drawImage(this.group==Group.GOOD?ResourcesMgr.goodTankR:ResourcesMgr.badTankR, x, y, null);
+                graphics.drawImage(this.group == Group.GOOD ? ResourcesMgr.goodTankR : ResourcesMgr.badTankR, x, y, null);
                 break;
             case DOWN:
-                graphics.drawImage(this.group==Group.GOOD?ResourcesMgr.goodTankD:ResourcesMgr.badTankD, x, y, null);
+                graphics.drawImage(this.group == Group.GOOD ? ResourcesMgr.goodTankD : ResourcesMgr.badTankD, x, y, null);
                 break;
         }
         move();
@@ -106,9 +105,13 @@ public class Tank extends GameObject {
     }
 
     public void move() {
+
+        oldx = x;
+        oldy = y;
         if (!moveing) {
             return;
         }
+
         switch (dir) {
             case LEFT:
                 x -= SPEED;
@@ -125,15 +128,12 @@ public class Tank extends GameObject {
         }
 
         rect.x = this.x;
-        rect.y= this.y;
-        rect.width=this.WIDTH;
-        rect.height=this.HEIGTH;
-
-        if (this.group == Group.BAD && random.nextInt(100) > 95) {
+        rect.y = this.y;
+        if (this.group == Group.BAD && random.nextInt(100) > 95)
             this.fire();
-            randomDir();
-        }
 
+        if (this.group == Group.BAD && random.nextInt(100) > 95)
+            randomDir();
         boundsCheck();
     }
 
@@ -151,26 +151,21 @@ public class Tank extends GameObject {
     public void randomDir() {
         this.dir = Dir.values()[random.nextInt(4)];
     }
-    public void boundsCheck(){
-        if(this.x<2){
-            x=2;
-        }else if(this.y<28){
-            y=28;
-        }else if(this.x>=TankFrame.GAME_WIDTH-Tank.WIDTH-2){
-            x=TankFrame.GAME_WIDTH-Tank.WIDTH-2;
-        }else if(this.y>=TankFrame.GAME_HEIGTH-Tank.HEIGTH-2){
-            y=TankFrame.GAME_HEIGTH-Tank.HEIGTH-2;
+
+    public void boundsCheck() {
+        if (this.x < 2) {
+            x = 2;
+        } else if (this.y < 28) {
+            y = 28;
+        } else if (this.x >= TankFrame.GAME_WIDTH - Tank.WIDTH - 2) {
+            x = TankFrame.GAME_WIDTH - Tank.WIDTH - 2;
+        } else if (this.y >= TankFrame.GAME_HEIGTH - Tank.HEIGTH - 2) {
+            y = TankFrame.GAME_HEIGTH - Tank.HEIGTH - 2;
         }
     }
-    public void stop(){
-        if(this.dir==Dir.UP){
-            this.dir=Dir.DOWN;
-        }else if(this.dir==Dir.DOWN){
-            this.dir=Dir.UP;
-        }else if(this.dir==Dir.LEFT){
-            this.dir=Dir.RIGHT;
-        }else if(this.dir==Dir.RIGHT){
-            this.dir=Dir.LEFT;
-        }
+
+    public void back() {
+        x = oldx;
+        y = oldy;
     }
 }

@@ -13,14 +13,13 @@ import java.awt.*;
  */
 @Data
 public class Explode extends GameObject{
+    public static int WIDTH = ResourcesMgr.explodes[0].getWidth();
+    public static int HEIGHT = ResourcesMgr.explodes[0].getHeight();
     private int x, y;
-    private GameModel gm = null;
     private int step = 0;
-    public Explode(int x, int y, GameModel gm) {
+    public Explode(int x, int y) {
         this.x = x;
         this.y = y;
-        this.gm = gm;
-//        new Audio("").run();
     }
 
 
@@ -29,7 +28,7 @@ public class Explode extends GameObject{
 
         g.drawImage(ResourcesMgr.explodes[step++], x, y, null);
         if (step >= ResourcesMgr.explodes.length) {
-            gm.remove(this);
+            GameModel.getInstance().remove(this);
         }
     }
 

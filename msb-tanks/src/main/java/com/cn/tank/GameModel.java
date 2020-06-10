@@ -2,6 +2,7 @@ package com.cn.tank;
 
 import com.cn.cor.BulletTankCollider;
 import com.cn.cor.Collider;
+import com.cn.cor.ColliderChain;
 import com.cn.cor.TankTankCollider;
 
 import java.awt.*;
@@ -16,31 +17,34 @@ import java.util.List;
  * @Version 1.0
  */
 public class GameModel {
+    private static final GameModel gm = new GameModel();
 
-    Tank myTank = new Tank(200, 400, Dir.DOWN, this, Group.GOOD);
-//    List<Tank> tanks = new ArrayList<>();
-//    List<Bullet> bullets = new ArrayList<>();
-//    List<Explode> explodes = new ArrayList<>();
-    //运用策略模式和责任链模式，筛选条件是责任链模式，不同的类型的碰撞就是实现接口就是策略模式
-    Collider collider = new BulletTankCollider();
-    Collider collider2 = new TankTankCollider();
-
-    List<GameObject> objects = new ArrayList<>();
-
-    public void getTank() {
-        /**
-         * 初始化敌方坦克
-         */
-        Object o = PropertyMgr.get("tanksCount");
-
-        for (int i = 0; i < Integer.parseInt(o.toString()); i++) {
-            add(new Tank(50 + i * 100, 200, Dir.DOWN, this, Group.BAD));
-        }
-
+    static {
+        gm.init();
     }
 
-    public GameModel() {
+     Tank myTank = null;
+    ColliderChain colliderChain = new ColliderChain();
+    List<GameObject> objects = new ArrayList<>();
 
+    private GameModel() {
+    }
+
+    private  void init() {
+        myTank = new Tank(200, 400, Dir.DOWN, Group.GOOD);
+        Object o = PropertyMgr.get("tanksCount");
+        for (int i = 0; i < Integer.parseInt(o.toString()); i++) {
+            new Tank(50 + i * 100, 200, Dir.DOWN, Group.BAD);
+        }
+
+        add(new Wall(120, 120, 200, 50));
+        add(new Wall(220, 120, 200, 50));
+        add(new Wall(300, 220, 50, 200));
+        add(new Wall(550, 320, 50, 200));
+    }
+
+    public static GameModel getInstance() {
+        return gm;
     }
 
     public void add(GameObject object) {
@@ -66,11 +70,10 @@ public class GameModel {
 
         //碰撞检测
         for (int i = 0; i < objects.size(); i++) {
-            for (int j = i+1; j < objects.size(); j++) {
+            for (int j = i + 1; j < objects.size(); j++) {
                 GameObject o1 = objects.get(i);
-                GameObject o2 =objects.get(j);
-                collider.collide(o1,o2);
-                collider2.collide(o1,o2);
+                GameObject o2 = objects.get(j);
+                colliderChain.collide(o1, o2);
             }
         }
     }

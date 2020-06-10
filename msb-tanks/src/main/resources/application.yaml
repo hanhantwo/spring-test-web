@@ -8,3 +8,4 @@ spring:
 tanksCount: 8
 goodsFS: com.cn.tank.FourFireStrategy
 badFS: DefaltFireStrategy
+colliderList: com.cn.cor.BulletTankCollider,com.cn.cor.TankTankCollider
