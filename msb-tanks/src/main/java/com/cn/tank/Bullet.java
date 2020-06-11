@@ -11,7 +11,6 @@ import java.awt.event.KeyEvent;
  */
 public class Bullet extends GameObject {
     private static final int SPEED = 5;
-    private int x, y;
     private Dir dir;
     public static int WIDTH = ResourcesMgr.bulletD.getWidth(), HEIGTH = ResourcesMgr.bulletD.getHeight();
     private boolean live = true;
@@ -86,7 +85,16 @@ public class Bullet extends GameObject {
     }
 
     public void die() {
-        this.live = false;
+        live = false;
     }
 
+    @Override
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    @Override
+    public int getHeigth() {
+        return HEIGTH;
+    }
 }

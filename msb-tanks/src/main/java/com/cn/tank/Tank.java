@@ -13,7 +13,6 @@ import java.util.Random;
  */
 @Data
 public class Tank extends GameObject {
-    public int x, y;
     public int oldx, oldy;
     public Dir dir = Dir.DOWN;
     private static final int SPEED = 3;
@@ -167,5 +166,14 @@ public class Tank extends GameObject {
     public void back() {
         x = oldx;
         y = oldy;
+    }
+    @Override
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    @Override
+    public int getHeigth() {
+        return HEIGTH;
     }
 }

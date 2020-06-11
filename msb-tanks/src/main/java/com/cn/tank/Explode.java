@@ -15,7 +15,6 @@ import java.awt.*;
 public class Explode extends GameObject{
     public static int WIDTH = ResourcesMgr.explodes[0].getWidth();
     public static int HEIGHT = ResourcesMgr.explodes[0].getHeight();
-    private int x, y;
     private int step = 0;
     public Explode(int x, int y) {
         this.x = x;
@@ -31,5 +30,13 @@ public class Explode extends GameObject{
             GameModel.getInstance().remove(this);
         }
     }
+    @Override
+    public int getWidth() {
+        return WIDTH;
+    }
 
+    @Override
+    public int getHeigth() {
+        return HEIGHT;
+    }
 }
