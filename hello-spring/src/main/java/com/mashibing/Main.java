@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @ClassName Main
- * @Description TODO
+ * @Description springIOC原理重现
  * @Author zhanghongjun
  * @Date 2020-06-07 23:01
  * @Version 1.0
@@ -19,6 +19,6 @@ public class Main {
 //        Driver driver = (Driver)context.getBean("driver");
 //        driver.getMsg();
         Tank tank = (Tank)context.getBean("tank");
-        tank.getDriver();
+//        tank.getDriver();
     }
 }

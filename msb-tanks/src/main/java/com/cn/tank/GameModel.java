@@ -1,11 +1,9 @@
 package com.cn.tank;
 
-import com.cn.cor.BulletTankCollider;
-import com.cn.cor.Collider;
 import com.cn.cor.ColliderChain;
-import com.cn.cor.TankTankCollider;
 
 import java.awt.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,14 +21,14 @@ public class GameModel {
         gm.init();
     }
 
-     Tank myTank = null;
+    Tank myTank = null;
     ColliderChain colliderChain = new ColliderChain();
     List<GameObject> objects = new ArrayList<>();
 
     private GameModel() {
     }
 
-    private  void init() {
+    private void init() {
         myTank = new Tank(200, 400, Dir.DOWN, Group.GOOD);
         Object o = PropertyMgr.get("tanksCount");
         for (int i = 0; i < Integer.parseInt(o.toString()); i++) {
@@ -81,4 +79,59 @@ public class GameModel {
     public Tank getMainTank() {
         return myTank;
     }
+
+    /**
+     * Memento存盘模式
+     * 按下指定键实现存盘功能，但是必须实现标志性序列化接口Serializable
+     */
+    public void save() {
+
+
+        File f = new File("F:\\workspace_msb\\tank.data");
+        ObjectOutputStream oos =null;
+        try {
+
+             oos = new ObjectOutputStream(new FileOutputStream(f));
+            oos.writeObject(myTank);
+            oos.writeObject(objects);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(oos!=null){
+                try {
+                    oos.close();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    /**
+     * 从文件里load回来,相当于回滚
+     */
+    public void load() {
+
+        File f = new File("F:\\workspace_msb\\tank.data");
+        ObjectInputStream ois =null;
+        try {
+             ois = new ObjectInputStream(new FileInputStream(f));
+            myTank = (Tank)ois.readObject();
+            objects = (List)ois.readObject();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(ois!=null){
+                try {
+                    ois.close();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+
 }

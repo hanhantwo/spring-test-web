@@ -2,6 +2,7 @@ package com.cn.tank;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.io.Serializable;
 
 /**
  * @ClassName Bullet
@@ -9,7 +10,7 @@ import java.awt.event.KeyEvent;
  * @Author luo15251835249
  * @Date 2020/5/31 23:53
  */
-public class Bullet extends GameObject {
+public class Bullet extends GameObject  {
     private static final int SPEED = 5;
     private Dir dir;
     public static int WIDTH = ResourcesMgr.bulletD.getWidth(), HEIGTH = ResourcesMgr.bulletD.getHeight();

@@ -3,6 +3,7 @@ package com.cn.tank;
 import lombok.Data;
 
 import java.awt.*;
+import java.io.Serializable;
 
 /**
  * @ClassName Explode
@@ -12,7 +13,7 @@ import java.awt.*;
  * @Version 1.0
  */
 @Data
-public class Explode extends GameObject{
+public class Explode extends GameObject {
     public static int WIDTH = ResourcesMgr.explodes[0].getWidth();
     public static int HEIGHT = ResourcesMgr.explodes[0].getHeight();
     private int step = 0;

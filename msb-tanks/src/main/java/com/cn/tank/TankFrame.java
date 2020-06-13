@@ -116,7 +116,12 @@ public class TankFrame extends Frame {
                 case KeyEvent.VK_CONTROL:
                     gm.getMainTank().fire();
                     break;
-
+                case KeyEvent.VK_S:
+                    gm.save();
+                    break;
+                case KeyEvent.VK_L:
+                    gm.load();
+                    break;
                 default:
                     break;
             }

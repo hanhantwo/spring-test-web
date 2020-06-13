@@ -12,4 +12,7 @@ repositories {
 dependencies {
     compile group: 'org.springframework', name: 'spring-context', version: '5.2.6.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.springframework/spring-aop
+    compile group: 'org.springframework', name: 'spring-aop', version: '5.1.7.RELEASE'
+
 }

@@ -7,7 +7,7 @@ package com.cn.tank;
  * @Date 2020-06-06 0:13
  * @Version 1.0
  */
-public class FourFireStrategy implements FireStrategy {
+public class FourFireStrategy implements FireStrategy  {
     @Override
     public void fire(Tank tank) {
         int bx = tank.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;

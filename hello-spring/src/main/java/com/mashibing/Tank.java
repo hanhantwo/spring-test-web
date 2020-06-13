@@ -9,13 +9,17 @@ package com.mashibing;
  */
 
 public class Tank {
-    Driver driver;
+//    Driver driver;
+//
+//    public Driver getDriver() {
+//        return driver;
+//    }
+//
+//    public void setDriver(Driver driver) {
+//        this.driver = driver;
+//    }
 
-    public Driver getDriver() {
-        return driver;
-    }
-
-    public void setDriver(Driver driver) {
-        this.driver = driver;
+    public void move(){
+        System.out.println("坦克呼呼的开。。。。。。。。。。。。");
     }
 }
