@@ -17,15 +17,18 @@ import java.net.StandardSocketOptions;
  *
  */
 public class SocketIOPropertites {
-
-
+    /**
+     * 配置参数
+     */
 
     //server socket listen property:
     private static final int RECEIVE_BUFFER = 10;
     private static final int SO_TIMEOUT = 0;
     private static final boolean REUSE_ADDR = false;
+    //不分配允许排队个数
     private static final int BACK_LOG = 2;
     //client socket listen property on server endpoint:
+    //是否保持长链接
     private static final boolean CLI_KEEPALIVE = false;
     private static final boolean CLI_OOB = false;
     private static final int CLI_REC_BUF = 20;
@@ -65,7 +68,7 @@ public class SocketIOPropertites {
             try {
                 System.in.read();  //分水岭：
 
-                Socket client = server.accept();
+                Socket client = server.accept();//accept（接受）后会拿的服务器生成的FD（文件描述符）
                 System.out.println("client port: " + client.getPort());
 
                 client.setKeepAlive(CLI_KEEPALIVE);
