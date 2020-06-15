@@ -12,6 +12,7 @@
     <modules>
         <module>msb-tanks</module>
         <module>msb-test</module>
+        <module>bjmashbing-sysio</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
