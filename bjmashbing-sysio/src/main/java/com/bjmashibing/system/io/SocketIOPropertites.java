@@ -25,10 +25,11 @@ public class SocketIOPropertites {
     private static final int RECEIVE_BUFFER = 10;
     private static final int SO_TIMEOUT = 0;
     private static final boolean REUSE_ADDR = false;
-    //不分配允许排队个数
+    //后续队列允许存活个数
     private static final int BACK_LOG = 2;
     //client socket listen property on server endpoint:
-    //是否保持长链接
+    //是否保持长链接，true开启心跳机制，双方建立连接后谁也不说话，没法确定对方还活着!!!在这种情况下，
+    //tcp为true时，就会发送心跳，判断对方是否还活着，这种情况下如果并发情况下可以收回哪些对方已经挂掉的连接。
     private static final boolean CLI_KEEPALIVE = false;
     private static final boolean CLI_OOB = false;
     private static final int CLI_REC_BUF = 20;
@@ -36,6 +37,7 @@ public class SocketIOPropertites {
     private static final int CLI_SEND_BUF = 20;
     private static final boolean CLI_LINGER = true;
     private static final int CLI_LINGER_N = 0;
+    //设置连接超时时间设置
     private static final int CLI_TIMEOUT = 0;
     private static final boolean CLI_NO_DELAY = false;
 /*
@@ -56,6 +58,7 @@ public class SocketIOPropertites {
         try {
             server = new ServerSocket();
             server.bind(new InetSocketAddress( 9090), BACK_LOG);
+            //设置发送缓冲区大小为20
             server.setReceiveBufferSize(RECEIVE_BUFFER);
             server.setReuseAddress(REUSE_ADDR);
             server.setSoTimeout(SO_TIMEOUT);
