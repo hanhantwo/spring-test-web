@@ -71,7 +71,8 @@ public class SocketIOPropertites {
             try {
                 System.in.read();  //分水岭：
 
-                Socket client = server.accept();//accept（接受）后会拿的服务器生成的FD（文件描述符）
+                //BIO是阻塞的，java中没有返回值(OS是-1) 的时候会一值卡着不动
+                Socket client = server.accept();//accept（接受）后会拿的服务器生成的FD（文件描述符），
                 System.out.println("client port: " + client.getPort());
 
                 client.setKeepAlive(CLI_KEEPALIVE);
