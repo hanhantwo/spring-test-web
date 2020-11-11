@@ -3,7 +3,6 @@ package com.cn.tank;
 import lombok.Data;
 
 import java.awt.*;
-import java.io.Serializable;
 import java.util.Random;
 
 /**

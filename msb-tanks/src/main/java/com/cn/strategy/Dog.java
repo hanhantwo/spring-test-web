@@ -9,7 +9,6 @@ import lombok.Data;
  * @Date 2020-06-05 21:23
  * @Version 1.0
  */
-@Data
 public class Dog implements Comparable<Dog>{
     int food;
    public Dog(int food){

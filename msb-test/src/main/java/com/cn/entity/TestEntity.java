@@ -12,7 +12,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-@TableName("test_entity")
+//@TableName("test_entity")
 public class TestEntity extends BaseEntity {
 
     private String name;
