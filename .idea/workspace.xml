@@ -1,23 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/ItemService.java" description="String getFileTemplateString() throws Exception;" line="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5196f520-f4b3-4a59-9b2a-d103a151014c" name="Default" comment="首次提交代码">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Explode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Group.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/ResourcesMgr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-tanks/msb-tanks.iml" afterPath="$PROJECT_DIR$/msb-tanks/msb-tanks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Bullet.java" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Bullet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-test/msb-test.iml" afterPath="$PROJECT_DIR$/msb-test/msb-test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-test-web.iml" afterPath="$PROJECT_DIR$/spring-test-web.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/FrameStart.java" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/TankFrame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/RunStart.java" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/layer/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/layer/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/layer/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/layer/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/layer/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/font/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/font/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/font/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/font/iconfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/12.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/13.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/14.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/17.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/18.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/19.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/20.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/21.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/22.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/23.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/25.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/26.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/27.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/28.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/29.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/30.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/31.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/32.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/33.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/34.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/35.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/37.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/38.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/39.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/40.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/41.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/42.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/43.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/44.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/45.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/46.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/47.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/48.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/49.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/50.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/51.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/52.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/53.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/54.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/55.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/56.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/57.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/58.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/59.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/60.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/61.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/62.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/63.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/64.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/65.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/66.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/67.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/68.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/69.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/70.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/71.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/images/face/9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/img/c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/img/logo_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/AricaApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/EnjoyConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/controller/MainController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/entity/Item.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/mapper/ItemMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/ItemService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/impl/ItemServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/application-dev.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/mapper/ItemMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/layui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/layui.mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/code.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/laydate/default/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/css/modules/layer/default/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/font/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/flow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/laydate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/layedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/laypage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/laytpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/rate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/transfer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/lay/modules/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-arica/src/main/resources/static/layui.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/msb-test/src/main/resources/mapper/TestMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/复习重点.xmind" afterPath="$PROJECT_DIR$/doc/复习重点.xmind" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/重点复习2.xmind" afterPath="$PROJECT_DIR$/doc/重点复习2.xmind" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-tanks/pom.xml" afterPath="$PROJECT_DIR$/msb-tanks/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/PropertyMgr.java" afterPath="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/PropertyMgr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-tanks/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/msb-tanks/src/main/resources/application-dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-test/pom.xml" afterPath="$PROJECT_DIR$/msb-test/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-test/src/main/java/com/cn/dao/TestMapper.java" afterPath="$PROJECT_DIR$/msb-test/src/main/java/com/cn/dao/TestMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber.java" afterPath="$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msb-test/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/msb-test/src/main/resources/application-dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/msb-tanks/src/main/resources/application.yaml" afterPath="$PROJECT_DIR$/msb-tanks/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/msb-tanks/target/" />
     <ignored path="$PROJECT_DIR$/msb-test/target/" />
+    <ignored path="$PROJECT_DIR$/bjmashbing-sysio/target/" />
+    <ignored path="$PROJECT_DIR$/msb-arica/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,26 +157,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Group.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Group.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TankFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/TankFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+            <state relative-caret-position="551">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,11 +177,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java">
+      <file leaf-file-name="ItemService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/ItemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="122" column="19" lean-forward="false" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/impl/ItemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-349">
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,53 +199,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourcesMgr.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/ResourcesMgr.java">
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Explode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Explode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            <state relative-caret-position="378">
+              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Bullet.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="89" column="5" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dir.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Dir.java">
+      <file leaf-file-name="EnjoyConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/EnjoyConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="252">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Main.java">
+      <file leaf-file-name="MethodProxy.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+            <state relative-caret-position="949">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,7 +245,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="mybatis-mapper.xml" />
       </list>
     </option>
   </component>
@@ -142,40 +267,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/fiber/HelloFilber2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cn/fiber/HelloFilber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cn/Application.java" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/FrameStart2.java" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Dir.java" />
-        <option value="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Data.class" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/RunStart.java" />
-        <option value="$PROJECT_DIR$/msb-test/src/main/resources/application-stg.yml" />
-        <option value="$PROJECT_DIR$/msb-test/src/main/java/com/cn/Application.java" />
-        <option value="$PROJECT_DIR$/msb-test/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-test/src/main/java/com/cn/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/msb-test/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/resources/application-stg.yml" />
-        <option value="$PROJECT_DIR$/msb-test/src/main/resources/application-dev.yml" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-tanks/pom.xml" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/test/ImageIoTest.java" />
-        <option value="$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/FrameStart.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Group.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Main.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Bullet.java" />
-        <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/ResourcesMgr.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/TankFrame.java" />
         <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Explode.java" />
+        <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/strategy/Dog.java" />
+        <option value="$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java" />
+        <option value="$PROJECT_DIR$/msb-test/src/main/java/com/cn/entity/TestEntity.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/AricaApplcation.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/AricaApplication.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/application.yaml" />
+        <option value="D:/maven/apache-maven-3.5.3/conf/settings.xml" />
+        <option value="$PROJECT_DIR$/msb-test/pom.xml" />
+        <option value="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/Driver.class" />
+        <option value="$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber.java" />
+        <option value="$PROJECT_DIR$/msb-test/src/main/resources/mapper/TestMapper.xml" />
+        <option value="$PROJECT_DIR$/msb-test/src/main/java/com/cn/dao/TestMapper.java" />
+        <option value="$PROJECT_DIR$/msb-tanks/pom.xml" />
+        <option value="$PROJECT_DIR$/msb-arica/pom.xml" />
+        <option value="$PROJECT_DIR$/msb-test/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/config/AricaConfig.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/config/EnjoyConfig.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.10.RELEASE/spring-webmvc-5.0.10.RELEASE.jar!/org/springframework/web/servlet/view/AbstractCachingViewResolver.class" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/msb-tanks/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/mapper/ItemMapper.xml" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/entity/Item.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/mapper/ItemMapper.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/view.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/arica.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/item_list.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/success.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/success_generate.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/editTemplates.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/add.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/edit_templates.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/templates.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/edit_template.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/templates/item.html" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/msb-arica/src/main/java/com.cn/EnjoyConfig.java" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -187,12 +334,13 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\Users\xiaoluoluo\.m2\repository" />
-        <option name="mavenHome" value="D:/apache-maven-3.5.3" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.5.3\conf\settings.xml" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
@@ -202,22 +350,20 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="msb-tanks" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="msb-tanks" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="bjmashbing-sysio" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="26" />
-    <option name="y" value="58" />
-    <option name="width" value="1349" />
-    <option name="height" value="690" />
+    <option name="x" value="353" />
+    <option name="width" value="1402" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -320,62 +466,93 @@
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="tank" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -383,20 +560,20 @@
             <path>
               <item name="spring-test-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-test-web" type="462c0819:PsiDirectoryNode" />
-              <item name="msb-tanks" type="462c0819:PsiDirectoryNode" />
+              <item name="msb-arica" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,20 +592,23 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/workspace/spring-test-web/msb-tanks/src/main/java/com/cn/tank/FrameStart.java" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cn.tank" />
       <recent name="com.cn" />
+      <recent name="com.cn.tank" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\spring-test-web\msb-arica\src\main\resources\templates" />
+      <recent name="D:\workspace\spring-test-web\msb-arica\src\main\java\com.cn\entity" />
+      <recent name="D:\workspace\spring-test-web\msb-arica\src\main\resources" />
       <recent name="F:\workSpace\spring-test-web\msb-tanks\src\main\resources" />
       <recent name="F:\workSpace\spring-test-web\msb-tanks\src\main\resources\images" />
-      <recent name="D:\workspace\spring-test-web\msb-tanks\src\main\resources" />
-      <recent name="F:\workSpace\spring-test-web\msb-tanks\src\main" />
-      <recent name="F:\workSpace\spring-test-web\msb-test\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,7 +623,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Spring Boot.AricaApplication">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -452,13 +632,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cn.Application" />
-      <module name="spring-test-web" />
-      <envs />
-    </configuration>
-    <configuration name="Application1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="Application1" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <module name="spring-test-web" />
       <envs />
     </configuration>
@@ -472,6 +645,17 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cn.ApplicationTest" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <module name="msb-test" />
+      <envs />
+    </configuration>
+    <configuration name="AricaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cn.AricaApplication" />
+      <module name="msb-arica" />
       <envs />
     </configuration>
     <configuration name="ImageIoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -606,20 +790,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application1" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.ApplicationTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ImageIoTest.test" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.ApplicationTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ImageIoTest.test" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.AricaApplication" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ImageIoTest.test" />
-        <item index="2" class="java.lang.String" itemvalue="Spring Boot.ApplicationTest" />
-        <item index="3" class="java.lang.String" itemvalue="Spring Boot.Application" />
-        <item index="4" class="java.lang.String" itemvalue="Spring Boot.Application1" />
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.AricaApplication" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.ApplicationTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ImageIoTest.test" />
+        <item index="4" class="java.lang.String" itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -664,6 +860,25 @@
       <workItem from="1591108864261" duration="5537000" />
       <workItem from="1591115036254" duration="287000" />
       <workItem from="1591115404561" duration="755000" />
+      <workItem from="1604844032790" duration="988000" />
+      <workItem from="1604845257682" duration="644000" />
+      <workItem from="1604845922136" duration="2765000" />
+      <workItem from="1604848724383" duration="185000" />
+      <workItem from="1604848936343" duration="603000" />
+      <workItem from="1604849847450" duration="434000" />
+      <workItem from="1604850312238" duration="825000" />
+      <workItem from="1604851165754" duration="41000" />
+      <workItem from="1605014513423" duration="2213000" />
+      <workItem from="1605358243461" duration="601000" />
+      <workItem from="1605788123035" duration="4581000" />
+      <workItem from="1605793820172" duration="844000" />
+      <workItem from="1605794691202" duration="2038000" />
+      <workItem from="1605796763015" duration="309000" />
+      <workItem from="1605797100880" duration="1869000" />
+      <workItem from="1605799001406" duration="2297000" />
+      <workItem from="1605937062912" duration="4698000" />
+      <workItem from="1605949230363" duration="16629000" />
+      <workItem from="1606013089969" duration="12654000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交代码">
       <created>1590935273329</created>
@@ -693,41 +908,46 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58968000" />
+    <option name="totallyTimeSpent" value="114186000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15300146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38176033" sideWeight="0.39166668" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7513572" sideWeight="0.5021322" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11673774" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4902174" sideWeight="0.90351814" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30184582" sideWeight="0.88272923" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47826087" sideWeight="0.49573562" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38193345" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66195655" sideWeight="0.6711087" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21010248" sideWeight="0.5" order="14" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7513572" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377399" sideWeight="0.6899563" order="14" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377399" sideWeight="0.31004366" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="17" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel Setup Guide" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -768,7 +988,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="首次提交代码" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -776,269 +998,415 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java">
+    <entry file="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="57" column="58" lean-forward="false" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Dir.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/Driver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Main.java">
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fiber/HelloFilber.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/fiber/HelloFilber2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/fiber/HelloFilber2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/fiber/HelloFilber.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/Application.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml" />
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/fiber/HelloFilber.java" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="98" column="6" lean-forward="false" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/awt/Window.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/awt/event/KeyAdapter.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/awt/Frame.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/awt/Component.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/annotation/Target.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/annotation/Documented.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/annotation/Retention.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Data.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Setter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-one/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/msb-test/src/main/resources/application-stg.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/msb-test/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/application-stg.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-test/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/test/ImageTest.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="79" selection-end-column="17" />
+        <state relative-caret-position="150">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.pom">
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/handler/TestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/resources/mapper/TestMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/resources/application-stg.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/impl/ItemService.java" />
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/dao/TestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.4.0/mybatis-plus-extension-3.4.0.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.4.0/mybatis-plus-extension-3.4.0.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/service/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/service/impl/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/EnjoyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/AricaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#236#237#0" expanded="false" />
+            <element signature="e#297#298#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.10.RELEASE/spring-webmvc-5.0.10.RELEASE.jar!/org/springframework/web/servlet/view/AbstractCachingViewResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/enjoy/4.9/enjoy-4.9.jar!/com/jfinal/template/ext/spring/JFinalViewResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/msb-tanks/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="305">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/images/0.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/images/1.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/javax/imageio/ImageIO.java" />
-    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-test/src/main/java/com/cn/fiber/HelloFilber2.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/test/ImageIoTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.4.0/mybatis-plus-annotation-3.4.0.jar!/com/baomidou/mybatisplus/annotation/IdType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" column="118" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="118" />
+        <state relative-caret-position="-210">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.4.0/mybatis-plus-core-3.4.0.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/entity/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/mapper/ItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <marker date="1605969186537" expanded="true" signature="331:531" ph="insert into item... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/mapper/ItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/success_generate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/Java/jdk1.8.0_112/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/application-stg.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/item_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="77" column="29" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/arica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/templates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="949">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/edit_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/templates/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Group.java">
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/EnjoyConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="252">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Main.java">
+    <entry file="file://$PROJECT_DIR$/msb-arica/src/main/java/com.cn/service/impl/ItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="122" column="19" lean-forward="false" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+        <state relative-caret-position="-349">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/ResourcesMgr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Dir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="89" column="5" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/TankFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msb-tanks/src/main/java/com/cn/tank/Explode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
@@ -1047,7 +1415,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

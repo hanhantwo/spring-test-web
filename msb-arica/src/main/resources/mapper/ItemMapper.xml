@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cn.mapper.ItemMapper">
+    <insert id="saveItem"  parameterType="com.cn.entity.Item"  useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into item (id, title, content,
+        last_generate)
+        values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR},
+        #{lastGenerate,jdbcType=TIMESTAMP})
+    </insert>
+</mapper>

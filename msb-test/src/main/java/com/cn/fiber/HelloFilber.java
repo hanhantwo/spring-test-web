@@ -1,8 +1,6 @@
 package com.cn.fiber;
 
-/**
- * ≤‚ ‘œÀ≥Ã 1
- */
+
 public class HelloFilber {
 
     public static void main(String[] args) throws Exception {

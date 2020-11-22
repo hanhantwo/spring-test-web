@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="msb-tanks:war">
-    <output-path>$PROJECT_DIR$/msb-tanks/target</output-path>
-    <root id="archive" name="msb-tanks.war">
-      <element id="artifact" artifact-name="msb-tanks:war exploded" />
-    </root>
-  </artifact>
-</component>
