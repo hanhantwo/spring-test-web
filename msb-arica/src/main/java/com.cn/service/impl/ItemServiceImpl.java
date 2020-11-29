@@ -34,10 +34,7 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements It
 
     @Override
     public void generateHtml(int id) {
-//        Engine engine = Engine.use();
         Engine engine = JFinalViewResolver.engine;
-        engine.setDevMode(true);//是否开启开发模式，生产环境不能true
-        engine.setToClassPathSourceFactory();
         //从数据源获取数据
         Item item = itemMapper.selectById(id);
         //前端模板用的键值对
@@ -54,9 +51,6 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements It
 
     @Override
     public String getFileTemplateString() throws Exception {
-
-//        String file = ClassUtils.getDefaultClassLoader().getResource("item.html").getFile();
-
         String file = templatesLocation + "item.html";
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
 
@@ -73,7 +67,6 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements It
 
     public void saveFileTemplateString(String content) throws Exception {
 
-//        String file = ClassUtils.getDefaultClassLoader().getResource("item.html").getFile();
         String file = templatesLocation + "item.html";
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
         writer.write(content);

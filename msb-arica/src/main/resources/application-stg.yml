@@ -1,0 +1,19 @@
+#设置端口号
+server:
+  port: 7001
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.130:3306/spring-test-web?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true
+    username: root
+    password: 123456
+    initialSize: 10
+    minidle: 5
+    maxActive: 50
+
+nginx:
+  html:
+    root: /usr/local/openresty/nginx/html/
+jfinal:
+  templates:
+    location: /usr/local/templates/
