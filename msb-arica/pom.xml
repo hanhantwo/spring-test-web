@@ -16,6 +16,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
+            <version>1.16.22</version>
         </dependency>
         <!-- enjoy模板引擎-->
         <dependency>
