@@ -9,9 +9,6 @@
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <properties>
-        <baomidou.version>3.1.1</baomidou.version>
-    </properties>
     <name>msb-test</name>
     <groupId>com.mashibing</groupId>
     <artifactId>msb-test</artifactId>
@@ -19,17 +16,30 @@
         <dependency>
             <groupId>co.paralleluniverse</groupId>
             <artifactId>quasar-core</artifactId>
-            <version>0.7.0</version>
+            <version>${quasar-core.version}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.0</version>
+            <version>${mybatis-plus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.7</version>
+            <version>${commons-lang.version}</version>
+        </dependency>
+       <!--rabbit依赖-->
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>${rabbit.version}</version>
+        </dependency>
+
+        <!--redis依赖-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${redis.version}</version>
         </dependency>
     </dependencies>
 </project>

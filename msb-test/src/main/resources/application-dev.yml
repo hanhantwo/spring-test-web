@@ -13,3 +13,27 @@ spring:
     #配置间隔多久进行一次检测，检测需要关闭空闲连接，单位是毫秒
     time-between-eviction-runs-millis: 6000
     min-evictable-idle-time-millis: 30000
+
+  redis:
+    database: 0
+    host:
+    password: 
+
+
+  #rabbitMQ连接
+  rabbitmq:
+    host: 10.82.109.118
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+#配置队列路由和交换机
+create:
+   queue:
+     name:  rabbitQueue  #队列名称
+     exchange: rabbitExchange  #交换机
+     routingKey: rabbitRoutingKey #路由key
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: /log/logs/${spring.application.name}
