@@ -32,7 +32,7 @@
         <commons-lang.version>3.7</commons-lang.version>
         <mybatis-plus.version>3.4.0</mybatis-plus.version>
         <redis.version>2.0.11.RELEASE</redis.version>
-        <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
+        <validator.version>1.1.0.Final</validator.version>
     </properties>
     <dependencies>
         <dependency>
@@ -84,9 +84,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>${hibernate-validator.version}</version>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${validator.version}</version>
         </dependency>
     </dependencies>
     <build>

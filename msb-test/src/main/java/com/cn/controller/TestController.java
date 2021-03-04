@@ -1,9 +1,8 @@
 package com.cn.controller;
 
-import com.cn.entity.TestEntity;
-import com.cn.group.AddGroup;
-import com.cn.util.ValidatorUtils;
+import com.cn.entity.TestValida;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -62,6 +61,7 @@ public class TestController {
 
         return newFileName;
     }
+
     /**
      * 上传附件
      */
@@ -82,10 +82,10 @@ public class TestController {
         }
         return 1;
     }
+
     /**
-     *
-     * @param stream 文件输入流
-     * @param path 保存的文件地址
+     * @param stream   文件输入流
+     * @param path     保存的文件地址
      * @param savefile 文件名
      * @throws IOException
      */
@@ -102,6 +102,7 @@ public class TestController {
         fs.close();
         stream.close();
     }
+
     /**
      * @param res
      * @param fileName 文件名称
@@ -160,11 +161,10 @@ public class TestController {
 
     /**
      * 新增实体类，并校验字段
-     * @param testEntity
+     *
+     * @param testValida
      */
-    public void addTestEntiy(@RequestBody TestEntity testEntity){
-        //调用校验字段方法
-        ValidatorUtils.setValidator(testEntity, AddGroup.class);
-
+    public void addTestEntiy(@RequestBody @Validated TestValida testValida) {
+        log.info(testValida.toString());
     }
 }

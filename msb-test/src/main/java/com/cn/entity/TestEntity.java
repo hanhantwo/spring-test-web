@@ -2,13 +2,10 @@ package com.cn.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.cn.group.AddGroup;
-import com.cn.group.UpdateGroup;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.*;
 import java.util.List;
 
 /**
@@ -19,10 +16,10 @@ import java.util.List;
  */
 @Setter
 @Getter
-//@TableName("test_entity")
+@TableName("test_entity")
 public class TestEntity extends BaseEntity {
 
-    @NotBlank(message = "名称不能为空",groups = {AddGroup.class, UpdateGroup.class})
+    @NotBlank(message = "名称不能为空")
     private String name;
     private Long age;
     @TableField(exist = false)
