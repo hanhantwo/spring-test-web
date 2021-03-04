@@ -29,7 +29,7 @@ class ImageIoTest {
              * ImageIoTest.class.getClassLoader() 可以理解为classpath路径
              */
             BufferedImage image2 = ImageIO.read(ImageIoTest.class.getClassLoader().getResourceAsStream("images/0.gif"));
-            assertNotNull(image);
+            assertNotNull(image2);
         } catch (IOException e) {
             e.printStackTrace();
         }

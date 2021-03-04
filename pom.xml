@@ -32,6 +32,7 @@
         <commons-lang.version>3.7</commons-lang.version>
         <mybatis-plus.version>3.4.0</mybatis-plus.version>
         <redis.version>2.0.11.RELEASE</redis.version>
+        <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
     </properties>
     <dependencies>
         <dependency>
@@ -82,6 +83,11 @@
             <version>5.5.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -95,6 +101,16 @@
                     <compilerArgument>-Xlint:unchecked</compilerArgument>
                 </configuration>
             </plugin>
+            <!--配置跳过测试打包 也可以通过命令跳过 mvn package -DskipTests 或 mvn package -Dmaven.test.skip=true-->
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-plugin</artifactId>
+               <version>2.22.1</version>
+               <configuration>
+                   <skipTests>true</skipTests>
+               </configuration>
+           </plugin>
+
         </plugins>
     </build>
 </project>

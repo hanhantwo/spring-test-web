@@ -1,6 +1,10 @@
 package com.cn.controller;
 
+import com.cn.entity.TestEntity;
+import com.cn.group.AddGroup;
+import com.cn.util.ValidatorUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -152,5 +156,15 @@ public class TestController {
             delete_flag = false;
         }
         return delete_flag;
+    }
+
+    /**
+     * 新增实体类，并校验字段
+     * @param testEntity
+     */
+    public void addTestEntiy(@RequestBody TestEntity testEntity){
+        //调用校验字段方法
+        ValidatorUtils.setValidator(testEntity, AddGroup.class);
+
     }
 }
