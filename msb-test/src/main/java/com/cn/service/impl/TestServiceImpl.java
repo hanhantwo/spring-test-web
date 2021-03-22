@@ -123,7 +123,7 @@ public class TestServiceImpl extends ServiceImpl<TestMapper,TestEntity>
             parent.setColorCode(1);
         }
     }
-    private  synchronized void recursiveList(List<AssessTrackVo> firstList,AssessTrackVo assessTrackVo){
+    private   void recursiveList(List<AssessTrackVo> firstList,AssessTrackVo assessTrackVo){
         firstList.stream().forEach(atv ->{
             List<AssessTrackVo> list=testMapper.selATVFirstListByTargetId(null,atv.getId());
             if(list!=null&&list.size()>0){
