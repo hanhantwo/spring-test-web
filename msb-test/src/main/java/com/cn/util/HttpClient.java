@@ -79,6 +79,7 @@ public class HttpClient {
      * @return String
      */
     public static String doGet(String url) {
+
         return doGet(url, null);
     }
 
