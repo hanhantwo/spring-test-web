@@ -1,6 +1,8 @@
 package com.cn.controller;
 
 import com.cn.entity.TestValida;
+import com.cn.util.ValidatorUtils;
+import com.cn.validator.group.AddGroup;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -164,7 +166,10 @@ public class TestController {
      *
      * @param testValida
      */
-    public void addTestEntiy(@RequestBody @Validated TestValida testValida) {
+    public void addTestEntiy(@RequestBody @Validated TestValida testValida)
+    {
+        //todo:验证入参必填的字段
+        ValidatorUtils.setValidator(testValida, AddGroup.class);
         log.info(testValida.toString());
     }
 }
