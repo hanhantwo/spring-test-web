@@ -47,6 +47,7 @@
         where id =#{id}
     </select>
     <select id="selBook">
+--         select id,book_name  bookName from book where id =#{id} and book_name =#{bookName}
         select id,book_name  bookName from book where id =#{id}
     </select>
     <resultMap id="selMainMap" type="com.cn.entity.TestEntity">
@@ -54,7 +55,7 @@
         <id column="id" property="id"></id>
         <result column="name" property="name"></result>
         <result column="age" property="age"></result>
-        <!--封装list集合属性-->
+        <!--封装list集合属性 ,查询是传多个参数的方法 column="{id=author_id,bookName=author_name}-->
         <collection property="bookList" column="id" javaType="ArrayList"
                     ofType="com.cn.entity.Book"
                     select="selBook">

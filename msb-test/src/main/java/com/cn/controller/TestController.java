@@ -3,8 +3,14 @@ package com.cn.controller;
 import com.cn.entity.TestValida;
 import com.cn.util.ValidatorUtils;
 import com.cn.validator.group.AddGroup;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -172,4 +178,37 @@ public class TestController {
         ValidatorUtils.setValidator(testValida, AddGroup.class);
         log.info(testValida.toString());
     }
+
+    /**
+     * @param filePath 文件地址
+     * @Description 文件下载返回Base64给前端渲染
+     *
+     */
+    @PreAuthorize("@ss.hasPermi('assessment:redline:list')")
+    @GetMapping("/downloadFile")
+    @ApiOperation("历史记录中--文件下载")
+    public String downloadFile(@Param("filePath") String filePath) {
+
+        BufferedInputStream bis = null;
+        byte[] data = null;
+        try {
+            //todo: 通过文件地址加名称拿取文件
+            bis = new BufferedInputStream(new FileInputStream(new File(filePath)));
+            data = new byte[bis.available()];
+            bis.read(data);
+        } catch (Exception e) {
+            log.error("图片渲染失败：",e);
+        } finally {
+            if (bis != null) {
+                try {
+                    bis.close();
+                } catch (Exception e) {
+                    log.error("图片渲染关闭流失败：",e);
+                }
+            }
+        }
+        String str = new String(Base64.encodeBase64(data));
+        return str;
+    }
+
 }
