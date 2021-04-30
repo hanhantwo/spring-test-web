@@ -30,6 +30,7 @@ import java.util.UUID;
 @Slf4j
 @RestController
 public class TestController {
+    private   String savePath  = "/Users/zhanghongjun/Desktop/图片/pdf/";
     /**
      * 文件上传 方法1
      *
@@ -209,6 +210,37 @@ public class TestController {
         }
         String str = new String(Base64.encodeBase64(data));
         return str;
+    }
+
+    /**
+     * 获取图片
+     * 页面可以直接访问的
+     */
+    @GetMapping("/preview")
+    @ApiOperation("获取图片")
+    public int images(HttpServletRequest request, HttpServletResponse response, @Param("fileName") String fileName) throws IOException {
+        String filePath = savePath+fileName;
+        File file = new File(filePath);
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file));
+        BufferedOutputStream bos = new BufferedOutputStream(response.getOutputStream());
+        response.setHeader("Content-Type", "image/jpeg");
+        byte b[] = new byte[1024];
+        int read;
+        try {
+            while ((read = bis.read(b)) != -1) {
+                bos.write(b, 0, read);
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+        } finally {
+            if (bos != null) {
+                bos.close();
+            }
+            if (bis != null) {
+                bis.close();
+            }
+        }
+        return 1;
     }
 
 }
