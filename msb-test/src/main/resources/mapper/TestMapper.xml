@@ -62,4 +62,26 @@
         </collection>
     </resultMap>
 
+    <!--  查询修改语句，将查询的结果集拿去修改其他表数据 -->
+    <select id="">
+    UPDATE
+    tab1,
+    tab2
+    SET tab1.avg_score = tab2.avg_score
+    WHERE tab1.id = tab2.id
+    </select>
+    <!--  查询插入语句，将查询的结果集插入到其他表中 -->
+    <select id="">
+        insert into t_dept_month_history (
+        norm_id,
+        dept_id,
+        create_time
+        )
+         select
+          norm_id,
+          dept_id,
+          now()
+               from t_dept_indicators_history
+    </select>
+
 </mapper>
