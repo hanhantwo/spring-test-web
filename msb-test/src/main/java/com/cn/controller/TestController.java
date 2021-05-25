@@ -118,15 +118,15 @@ public class TestController {
      * @Description 文件下载
      */
     public static void download(HttpServletResponse res, String fileName, String filePath) {
+        BufferedInputStream bis = null;
+        OutputStream os = null;
+        try {
         res.setHeader("content-type", "application/octet-stream");
         res.setContentType("application/octet-stream");
         res.setCharacterEncoding("utf-8");
         //todo 设置响应头，返回文件名称
-        res.setHeader("Content-Disposition", "attachment;filename=" + fileName);
+        res.setHeader("Content-Disposition", "attachment;filename=" + java.net.URLEncoder.encode(fileName, "UTF-8"));
         byte[] buff = new byte[1024];
-        BufferedInputStream bis = null;
-        OutputStream os = null;
-        try {
             os = res.getOutputStream();
             //todo: 通过文件地址加名称拿取文件
             bis = new BufferedInputStream(new FileInputStream(new File(filePath + fileName)));

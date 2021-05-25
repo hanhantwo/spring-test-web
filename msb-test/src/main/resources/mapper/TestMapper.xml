@@ -62,13 +62,18 @@
         </collection>
     </resultMap>
 
-    <!--  查询修改语句，将查询的结果集拿去修改其他表数据 -->
+    <!--  查询修改语句，将查询的结果集拿去修改其他表数据01 -->
     <select id="">
     UPDATE
     tab1,
     tab2
     SET tab1.avg_score = tab2.avg_score
-    WHERE tab1.id = tab2.id
+    WHERE tab1.id = tab2.id;
+    </select>
+    <!--  查询修改语句，将查询的结果集拿去修改其他表数据02 -->
+    <select id="">
+        UPDATE  ` user `  AS  A
+         INNER  JOIN  ( SELECT  id  FROM  ` user `  WHERE  `sid`=2)  AS  B  ON  A.id=B.id  SET  A.gid= '123'
     </select>
     <!--  查询插入语句，将查询的结果集插入到其他表中 -->
     <select id="">
@@ -82,6 +87,7 @@
           dept_id,
           now()
                from t_dept_indicators_history
+               where DATE_FORMAT(created_time,'%Y-%m-%d %H:%i:%S') ='2021-05-06 02:15:00'
     </select>
 
 </mapper>
