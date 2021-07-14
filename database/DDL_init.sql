@@ -287,3 +287,24 @@ CREATE TABLE `base_dict_type` (
   PRIMARY KEY (`dict_id`),
   UNIQUE KEY `dict_type` (`dict_type`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='字典类型表';
+
+
+-- 1.PRIMARY  KEY（主键索引）
+--         mysql>ALTER  TABLE  `table_name`  ADD  PRIMARY  KEY (  `column`  )
+-- 2.UNIQUE(唯一索引)
+--         mysql>ALTER  TABLE  `table_name`  ADD  UNIQUE (`column` )
+-- 3.INDEX(普通索引)
+--         mysql>ALTER  TABLE  `table_name`  ADD  INDEX index_name (  `column`  )
+-- 4.FULLTEXT(全文索引)
+--         mysql>ALTER  TABLE  `table_name`  ADD  FULLTEXT ( `column` )
+-- 5.多列索引
+--         mysql>ALTER  TABLE  `table_name`  ADD  INDEX index_name (  `column1`,  `column2`,  `column3`  )
+--
+--
+--
+-- 二、使用CREATE INDEX语句对表增加索引。
+--
+-- 能够增加普通索引和UNIQUE索引两种。其格式如下：
+-- create index index_name on table_name (column_list) ;
+-- create unique index index_name on table_name (column_list) ;
+-- 说明：table_name、index_name和column_list具有与ALTER TABLE语句中相同的含义，索引名不可选。另外，不能用CREATE INDEX语句创建PRIMARY KEY索引。

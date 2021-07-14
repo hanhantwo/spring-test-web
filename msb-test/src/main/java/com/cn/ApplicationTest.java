@@ -2,10 +2,16 @@ package com.cn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.cn.redis.TestRedis;
 
 @SpringBootApplication
 public class ApplicationTest {
-    public static void main(String[] args) {
-        SpringApplication.run(ApplicationTest.class);
-    }
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ca = SpringApplication.run(ApplicationTest.class);
+		// 测试redis序列化的问题
+		TestRedis testRedis = ca.getBean(TestRedis.class);
+		testRedis.testRedis();
+	}
 }
