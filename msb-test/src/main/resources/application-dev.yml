@@ -14,10 +14,10 @@ spring:
     time-between-eviction-runs-millis: 6000
     min-evictable-idle-time-millis: 30000
 
-  redis:
-    database: 0
-    host:
-    password: 
+  redis: 127.0.0.1
+    database: 1
+    host: 127.0.0.1
+    password:  123456
 
 
   #rabbitMQ连接
@@ -29,10 +29,10 @@ spring:
     virtual-host: /
 #配置队列路由和交换机
 create:
-   queue:
-     name:  rabbitQueue  #队列名称
-     exchange: rabbitExchange  #交换机
-     routingKey: rabbitRoutingKey #路由key
+  queue:
+    name:  rabbitQueue  #队列名称
+    exchange: rabbitExchange  #交换机
+    routingKey: rabbitRoutingKey #路由key
 logging:
   config: classpath:logback-spring.xml
   file:
