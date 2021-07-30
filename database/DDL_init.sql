@@ -308,3 +308,23 @@ CREATE TABLE `base_dict_type` (
 -- create index index_name on table_name (column_list) ;
 -- create unique index index_name on table_name (column_list) ;
 -- 说明：table_name、index_name和column_list具有与ALTER TABLE语句中相同的含义，索引名不可选。另外，不能用CREATE INDEX语句创建PRIMARY KEY索引。
+
+
+--
+-- 1、表（t_tbl）增加字段
+--
+-- – 添加一个名为 col_name_add 的字符字段
+-- alter table t_tbl add column col_name_add varchar(20);
+--
+-- 2、修改字段名
+--
+-- – 将 col_name_old 的字段名改为 col_name_new 的字段名
+-- alter table t_tbl change column col_name_old col_name_new varchar(20);
+--
+-- 3、修改字段类型
+--
+-- alter table t_tbl modify address varchar(20);
+--
+-- 4、删除某字段
+--
+-- alter table t_tbl drop column col_name;
