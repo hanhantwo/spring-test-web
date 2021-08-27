@@ -1,5 +1,6 @@
 package com.cn.util;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -16,6 +18,9 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.entity.mime.HttpMultipartMode;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
@@ -181,6 +186,23 @@ public class HttpClient {
 			}
 		}
 		return resultString;
+	}
+
+	// 上传文件
+	public void testUpload1() throws IOException {
+		CloseableHttpClient httpclient = HttpClients.createDefault();
+		String api = "/api/files/1";
+		String url = String.format("%s%s", "BASE_URL", api);
+		HttpPost httpPost = new HttpPost(url);
+		File file = new File("C:/Users/hetiantian/Desktop/学习/docker_practice.pdf");
+		FileBody fileBody = new FileBody(file);
+		MultipartEntityBuilder builder = MultipartEntityBuilder.create();
+		builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
+		builder.addPart("file", fileBody); // addPart上传文件
+		HttpEntity entity = builder.build();
+		httpPost.setEntity(entity);
+		CloseableHttpResponse response = httpclient.execute(httpPost);
+		System.out.println(EntityUtils.toString(response.getEntity()));
 	}
 
 	public static void main(String[] args) {

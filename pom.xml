@@ -21,10 +21,11 @@
         <version>2.2.0.RELEASE</version>
         <relativePath/>
     </parent>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-         <!--统一依赖的版本号-->
+        <!--统一依赖的版本号-->
         <java.version>1.8</java.version>
         <baomidou.version>3.1.1</baomidou.version>
         <quasar-core.version>0.7.0</quasar-core.version>
@@ -35,7 +36,9 @@
         <validator.version>1.1.0.Final</validator.version>
         <swagger-version>1.6.1</swagger-version>
         <security-version>5.3.8.RELEASE</security-version>
+        <hutool-all.version>5.6.5</hutool-all.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -104,14 +107,14 @@
                 </configuration>
             </plugin>
             <!--配置跳过测试打包 也可以通过命令跳过 mvn package -DskipTests 或 mvn package -Dmaven.test.skip=true-->
-           <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <version>2.22.1</version>
-               <configuration>
-                   <skipTests>true</skipTests>
-               </configuration>
-           </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
 
         </plugins>
     </build>
