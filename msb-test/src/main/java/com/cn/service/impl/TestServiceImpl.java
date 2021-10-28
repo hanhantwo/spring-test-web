@@ -45,12 +45,6 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, TestEntity> impleme
 		if (firstList != null && firstList.size() > 0) {
 			this.recursiveList(firstList, assessTrackVo);
 			assessTrackVo.setChildren(firstList);
-			// 封装得分
-			for (AssessTrackVo a : firstList) {
-				this.setActualScore(a, a.getChildren());
-				this.setParentActualScore(assessTrackVo, a);
-			}
-
 			// 封装色标
 			for (AssessTrackVo a : firstList) {
 				this.setColorCode(a, a.getChildren());
@@ -66,47 +60,24 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, TestEntity> impleme
 		return assessTrackVo;
 	}
 
-	private void setActualScore(AssessTrackVo assessTrackVo, List<AssessTrackVo> list) {
-		if (list != null) {
-			for (AssessTrackVo e : list) {
-				if (e.getActualScore() == null && assessTrackVo.getActualScore() == null) {
-					this.setActualScore(e, e.getChildren());
-				}
-				if (assessTrackVo.getActualScore() != null && e.getActualScore() == null) {
-					this.setActualScore(e, e.getChildren());
-				}
-				if (assessTrackVo.getActualScore() == null && e.getActualScore() != null) {
-					this.setParentActualScore(assessTrackVo, e);
-					continue;
-				}
-				if (assessTrackVo.getActualScore() != null && e.getActualScore() != null) {
-					this.setParentActualScore(assessTrackVo, e);
-				}
-			}
-		}
-	}
-
-	private void setParentActualScore(AssessTrackVo parent, AssessTrackVo children) {
-		if (parent.getActualScore() == null) {
-			parent.setActualScore(0);
-		}
-		parent.setActualScore(children.getActualScore() + parent.getActualScore());
-	}
-
+	// 递归遍历
 	private void setColorCode(AssessTrackVo assessTrackVo, List<AssessTrackVo> list) {
 		if (list != null) {
 			for (AssessTrackVo e : list) {
 				if (e.getColorCode() == null && assessTrackVo.getColorCode() == null) {
+					// 递归遍历
 					this.setColorCode(e, e.getChildren());
 				}
 				if (assessTrackVo.getColorCode() != null && e.getColorCode() == null) {
+					// 递归遍历
 					this.setColorCode(e, e.getChildren());
 				}
 				if (assessTrackVo.getColorCode() == null && e.getColorCode() != null) {
+					// 根据子节点大小给父节点赋值（此时父节点为空）
 					this.colorOneSet(assessTrackVo, e);
 				}
 				if (assessTrackVo.getColorCode() != null && e.getColorCode() != null) {
-					// 比大小
+					// 比大小颜色值大小，然后修改父节点的值（此时父节点已有值）
 					this.colorSetExchange(assessTrackVo, e);
 				}
 			}
@@ -114,7 +85,7 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, TestEntity> impleme
 	}
 
 	private void colorOneSet(AssessTrackVo parent, AssessTrackVo children) {
-		// 向上封装色标
+		// 向父节点标记色标
 		if (children.getColorCode() >= 1) {
 			parent.setColorCode(1);
 		} else if (children.getColorCode() == 0) {
@@ -123,7 +94,6 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, TestEntity> impleme
 
 	}
 
-	// 比较颜色指标大小
 	private void colorSetExchange(AssessTrackVo parent, AssessTrackVo children) {
 		if (parent.getColorCode() < children.getColorCode()) {
 			parent.setColorCode(1);
@@ -143,14 +113,23 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, TestEntity> impleme
 				int num = 20;
 				if ((float) num / atv.getWeight() < 0.7) {
 					atv.setColorCode(2);
-					atv.setActualScore((int) (Math.round(Math.random() * 100)));
 					// 计算实际得分
 				} else if ((float) num / atv.getWeight() >= 0.7) {
 					atv.setColorCode(0);
-					atv.setActualScore((int) (Math.round(Math.random() * 100)));
 				}
 			}
 		});
 	}
 
+	// todo:快排算法案例
+	public static int[] kuaipai(int[] arr) {
+		int k = (int) (Math.random() * arr.length) + 1;
+
+//		this.process(arr, k);
+		return null;
+	}
+
+	public static void process(int[] arr, int k) {
+
+	}
 }
